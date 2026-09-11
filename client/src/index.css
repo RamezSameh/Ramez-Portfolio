@@ -34,7 +34,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .section-pad { padding: 128px 0; }
 .section-dark { background: var(--ink-soft); }
 
-.site-header { position: absolute; z-index: 20; top: 0; width: 100%; border-bottom: 1px solid rgba(175,190,224,.1); background: rgba(8,11,18,.68); backdrop-filter: blur(16px); }
+.site-header {position: fixed; z-index: 20; top: 0; width: 100%; border-bottom: 1px solid rgba(175,190,224,.1); background: rgba(8,11,18,.68); backdrop-filter: blur(16px); }
 .nav-inner { height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; }
 .brand-mark { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--indigo); border-radius: 50%; color: var(--indigo-bright); font: 700 10px 'Space Grotesk', sans-serif; letter-spacing: -0.04em; }
@@ -64,7 +64,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 h1, h2, h3, p { margin-top: 0; }
 h1, h2, h3, .brand-name { font-family: 'Space Grotesk', sans-serif; }
 .hero-copy h1 { margin-bottom: 28px; font-size: clamp(48px, 6.1vw, 84px); line-height: .99; letter-spacing: -.075em; font-weight: 600; }
-.hero-copy h1 em { color: transparent; font-style: normal; -webkit-text-stroke: 1px rgba(241,244,251,.66); }
+.hero-copy h2 { margin-bottom: 28px; font-size: clamp(28px, 4vw, 35px); line-height: .99; letter-spacing: -.075em; font-weight: 600; }
+.hero-copy h2 em {font-size: clamp(40px, 4.5vw, 65px);color: transparent; font-style: normal; -webkit-text-stroke: 1px rgba(241, 244, 251, .66);}
 .hero-description { max-width: 480px; margin-bottom: 32px; color: var(--muted); font-size: 16px; line-height: 1.7; }
 .hero-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 46px; padding: 0 18px; border: 1px solid transparent; border-radius: 3px; font-size: 12px; font-weight: 600; transition: transform .16s var(--ease-out), border-color .2s ease, background .2s ease, color .2s ease; }

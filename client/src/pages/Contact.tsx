@@ -1,5 +1,5 @@
 import { FormEvent, useState } from 'react';
-import { ArrowUpRight, Check, Github, Mail, MapPin } from 'lucide-react';
+import { ArrowUpRight, Check, Github, Linkedin, Mail, MapPin, PhoneCall } from 'lucide-react';
 import { personal } from '../data/constants';
 import { Reveal } from '../components/Reveal';
 import { SectionHeading } from '../components/SectionHeading';
@@ -26,7 +26,17 @@ Reply to: ${data.get('email')}`);
       <section className="page-hero section-pad">
         <div className="container contact-hero-grid">
           <SectionHeading eyebrow={copy.eyebrow} title={<>{copy.title}<br /><span>{copy.accent}</span></>} description={copy.description} />
-          <Reveal delay={0.1} className="contact-details"><div className="detail-item"><Mail size={18} /><div><span>{copy.email}</span><a href={`mailto:${personal.email}`}>{personal.email}</a></div></div><div className="detail-item"><MapPin size={18} /><div><span>{copy.based}</span><strong>{personal.location}</strong></div></div><div className="detail-item"><Github size={18} /><div><span>{copy.elsewhere}</span><a href={personal.github} target="_blank" rel="noreferrer">github.com/RamezSameh</a></div></div></Reveal>
+          <Reveal delay={0.1} className="contact-details">
+            <div className="detail-item"><Mail size={18} />
+              <div><span>{copy.email}</span><a href={`mailto:${personal.email}`}>{personal.email}</a></div></div>
+            <div className="detail-item"><PhoneCall size={18} /><div><span>WhatsApp</span><a href={personal.Whatsapp} target="_blank" rel="noreferrer">+201555317628</a></div></div>
+
+            <div className="detail-item"><MapPin size={18} />
+              <div><span>{copy.based}</span><strong>{personal.location}</strong></div></div>
+            <div className="detail-item"><Github size={18} /><div><span>Github</span><a href={personal.github} target="_blank" rel="noreferrer">github.com/RamezSameh</a></div></div>
+            <div className="detail-item"><Linkedin size={18} /><div><span>LinkedIn</span><a href={personal.LinkedIn} target="_blank" rel="noreferrer">linkedin.com/in/ramez-sameh</a></div></div>
+
+          </Reveal>
         </div>
       </section>
       <section className="contact-form-section section-pad section-dark">

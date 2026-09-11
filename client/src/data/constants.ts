@@ -8,7 +8,11 @@ export const personal = {
   availability: 'Open to select opportunities',
   github: 'https://github.com/RamezSameh/',
   email: 'samehramez24@gmail.com',
-  cv: 'https://drive.google.com/file/d/15HHBvvafJ1P4arIGcKNGw_h2jeG88ii-/view?usp=drivesdk',
+  cv: 'https://drive.google.com/file/d/15HHBvvafJ1P4arIGcKNGw_h2jeG88ii-/view?usp=drive_link',
+  profilePic: 'Pics/myPicture.png',
+  LinkedIn: 'https://www.linkedin.com/in/ramez-sameh/',
+  Whatsapp: 'https://wa.me/201555317628',
+
 };
 
 export const navLinks = [
@@ -75,12 +79,16 @@ export const projects = [
 export const skills = [
   { name: 'C# / .NET', detail: 'Core language & ecosystem', level: 94, category: 'Backend', icon: 'braces' },
   { name: 'ASP.NET Core Web API', detail: 'Scalable API design', level: 92, category: 'Backend', icon: 'server' },
-  { name: 'React.js', detail: 'Interfaces & product flows', level: 86, category: 'Frontend', icon: 'atom' },
+  { name: 'React / TypeScript', detail: 'Interfaces & product flows', level: 86, category: 'Frontend', icon: 'atom' },
+  { name: 'Angular', detail: 'Component-based development', level: 75, category: 'Frontend', icon: 'atom' },
   { name: 'SQL Server / EF Core', detail: 'Data modeling & persistence', level: 88, category: 'Data', icon: 'database' },
+  { name: 'Entity Framework Core', detail: 'Data access & ORM', level: 88, category: 'Data', icon: 'database' },
   { name: 'Docker', detail: 'Portable environments', level: 78, category: 'DevOps', icon: 'container' },
+  { name: 'Clean Architecture', detail: 'System design & organization', level: 85, category: 'Delivery', icon: 'braces' },
   { name: 'SignalR / JWT', detail: 'Real-time & security', level: 84, category: 'Platform', icon: 'radio' },
   { name: 'Azure / AWS', detail: 'Deployment foundations', level: 70, category: 'Cloud', icon: 'cloud' },
   { name: 'Git / GitHub', detail: 'Versioned collaboration', level: 92, category: 'Workflow', icon: 'git-branch' },
+
 ];
 
 export const principles = [

@@ -15,9 +15,13 @@ export default function Skills() {
         <div className="container page-hero-grid">
           <SectionHeading eyebrow={copy.eyebrow} title={<>{copy.title}<br /><span>{copy.accent}</span></>} description={copy.description} />
           <Reveal delay={0.1} className="page-hero-aside"><div className="code-card"><div className="code-card-top"><span /><span /><span /><small>stack.config</small></div><pre>{`const approach = {
-  backend: "clean",
-  frontend: "human",
-  delivery: "reliable"
+  backend: "C# / .NET",
+  frontend: "React / TypeScript",
+  delivery: "Clean Architecture",
+  devops: "Docker / Azure / AWS",
+  data: "SQL Server / EF Core",
+  realtime: "SignalR / JWT",
+  collaboration: "Git / GitHub",
 }`}</pre></div></Reveal>
         </div>
       </section>

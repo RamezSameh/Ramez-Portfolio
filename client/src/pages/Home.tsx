@@ -17,8 +17,8 @@ export default function Home() {
           <div className="hero-copy">
             <Reveal>
               <div className="status-pill"><span className="status-dot" /> {home.availability}</div>
-              <p className="hero-kicker">{home.kicker} <span>—</span> {home.specialization}</p>
-              <h1>{home.heroTitle}<br /><em>{home.heroOutline}</em> {home.heroMiddle}<br /><span>{home.heroAccent}</span></h1>
+              <h1>{home.heroTitle}<br /></h1>
+              <h2><em>{home.heroOutline}</em> <br />{home.heroMiddle}<span>{home.heroAccent}</span></h2>
               <p className="hero-description">{home.tagline}</p>
               <div className="hero-actions">
                 <Link className="button button-primary" to="/projects">{home.explore} <ArrowUpRight size={17} /></Link>
@@ -32,7 +32,7 @@ export default function Home() {
             <div className="hero-art" aria-label="Abstract system architecture illustration">
               
               <div data-loc="client\src\pages\Home.tsx:35" >
-                  <img className="rounded-full object-cover" alt="Ramez Sameh" src="/Pics/myPicture.png" />
+                  <img className="rounded-full object-cover" alt="Ramez Sameh" src={personal.profilePic} />
               </div>
             </div>
           </Reveal>
