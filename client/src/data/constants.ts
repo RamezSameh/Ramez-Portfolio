@@ -8,7 +8,7 @@ export const personal = {
   availability: 'Open to select opportunities',
   github: 'https://github.com/RamezSameh/',
   email: 'samehramez24@gmail.com',
-  cv: 'https://drive.google.com/file/d/15HHBvvafJ1P4arIGcKNGw_h2jeG88ii-/view?usp=drive_link',
+  cv: 'https://drive.google.com/file/d/14J6P9Zv36o9T0fJh3vrQ09PCoerEo-gA/view?usp=drive_link',
   profilePic: 'Pics/myPicture.png',
   LinkedIn: 'https://www.linkedin.com/in/ramez-sameh/',
   Whatsapp: 'https://wa.me/201555317628',
