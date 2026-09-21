@@ -30,10 +30,8 @@ export default function Home() {
 
           <Reveal delay={0.12} className="hero-art-wrap">
             <div className="hero-art" aria-label="Abstract system architecture illustration">
-              
-              <div data-loc="client\src\pages\Home.tsx:35" >
-                  <img className="rounded-full object-cover" alt="Ramez Sameh" src={personal.profilePic} />
-              </div>
+              <img className="rounded-full object-cover" alt="Ramez Sameh" src={personal.profilePic} />
+
             </div>
           </Reveal>
         </div>
