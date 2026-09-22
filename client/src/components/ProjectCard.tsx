@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { ArrowUpRight, ExternalLink, Github, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import type { projects } from '../data/constants';
+import { projects } from '../data/constants';
 import { useLanguage } from '../contexts/LanguageContext';
 
 type Project = (typeof projects)[number];
@@ -43,7 +43,7 @@ export function ProjectCard({ project, featured = false, index = 0 }: ProjectCar
       transition={{ duration: 0.55, delay: index * 0.08, ease: [0.23, 1, 0.32, 1] }}
     >
       <div className="project-card-top">
-        <div className="project-index">{project.number} <span>/ 03</span></div>
+        <div className="project-index">{project.number} <span>/ {String(projects.length).padStart(2, '0')}</span></div>
         <div className="project-card-actions">
           <span className="star-count"><Star size={13} fill="currentColor" /> {stars ?? project.stars}</span>
           <a href={project.github} target="_blank" rel="noreferrer" aria-label={`Open ${name} on GitHub`} onClick={(event) => event.stopPropagation()}><Github size={17} /></a>
@@ -53,7 +53,7 @@ export function ProjectCard({ project, featured = false, index = 0 }: ProjectCar
         <img className="project-image" src={project.image} alt="" loading="lazy" />
         <div className="project-image-shade" />
         <span className="visual-label">{project.tags[0]}</span>
-        <span className="visual-code">{project.number === '01' ? 'signalr://live' : project.number === '02' ? 'core / application' : 'docker compose up'}</span>
+        <span className="visual-code">{project.visualCode}</span>
       </div>
       <div className="project-card-body">
         <p className="project-eyebrow">{eyebrow}</p>
