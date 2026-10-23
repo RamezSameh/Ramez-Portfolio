@@ -231,7 +231,7 @@ export const skills = [
 ];
 
 export const principles = [
-  { label: '01', title: 'Architecture with intent', text: 'Choose patterns that keep the next feature easy to build, not just the current one easy to demo.' },
-  { label: '02', title: 'Performance as a feature', text: 'Fast APIs, purposeful data access, and responsive interfaces are part of the product experience.' },
-  { label: '03', title: 'Details that earn trust', text: 'Clear states, careful spacing, and resilient interactions turn a technically solid build into a product.' },
+  { label: '01', title: 'Architecture first', text: 'Clean Architecture and clear layers, so the next feature is easy to build — not just the current demo.' },
+  { label: '02', title: 'Build end-to-end', text: 'ASP.NET Core APIs with Angular or React frontends, SQL Server and EF Core, JWT auth, and real-time features where they fit.' },
+  { label: '03', title: 'Test & ship', text: 'xUnit tests, Docker-ready setups, and GitHub to Vercel delivery — a product that actually runs, not just code.' },
 ];

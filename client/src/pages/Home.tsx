@@ -55,7 +55,7 @@ export default function Home() {
       <section className="principles-section section-pad">
         <div className="container">
           <Reveal><div className="section-topline"><div><p className="eyebrow"><span className="eyebrow-line" />{home.how}</p><h2>{home.goodCode}<br /><span>{home.half}</span></h2></div><p className="section-side-note">{home.sideNote}</p></div></Reveal>
-          <div className="principles-grid">{principles.map((principle, index) => <Reveal key={principle.label} delay={index * 0.08}><div className="principle"><span className="principle-number">{principle.label}</span><h3>{isArabic ? ['المعمارية بوعي', 'الأداء ميزة', 'تفاصيل تبني الثقة'][index] : principle.title}</h3><p>{isArabic ? ['اختر أنماطًا تجعل بناء الميزة التالية أسهل، لا مجرد العرض الحالي.', 'واجهات سريعة ووصول مدروس للبيانات وتجربة متجاوبة.', 'حالات واضحة وتفاعلات مرنة في كل طبقة.'][index] : principle.text}</p></div></Reveal>)}</div>
+          <div className="principles-grid">{principles.map((principle, index) => <Reveal key={principle.label} delay={index * 0.08}><div className="principle"><span className="principle-number">{principle.label}</span><h3>{isArabic ? ['المعمارية أولًا', 'بناء متكامل', 'اختبار وتسليم'][index] : principle.title}</h3><p>{isArabic ? ['معمارية Clean Architecture وطبقات واضحة، عشان الميزة الجاية تبقى سهلة البناء، مش العرض الحالي بس.', 'واجهات ASP.NET Core البرمجية مع واجهات Angular أو React، و SQL Server و EF Core، ومصادقة JWT وميزات لحظية عند الحاجة.', 'اختبارات xUnit، وإعدادات Docker جاهزة، وتسليم من GitHub إلى Vercel — منتج شغال فعلًا، مش كود بس.'][index] : principle.text}</p></div></Reveal>)}</div>
         </div>
       </section>
 
