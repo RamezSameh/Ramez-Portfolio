@@ -47,6 +47,7 @@ export function ProjectCard({ project, featured = false, index = 0 }: ProjectCar
         <div className="project-card-actions">
           <span className="star-count"><Star size={13} fill="currentColor" /> {stars ?? project.stars}</span>
           <a href={project.github} target="_blank" rel="noreferrer" aria-label={`Open ${name} on GitHub`} onClick={(event) => event.stopPropagation()}><Github size={17} /></a>
+          {project.demo ? <a href={project.demo} target="_blank" rel="noreferrer" aria-label={`Open live demo of ${name}`} onClick={(event) => event.stopPropagation()}><ExternalLink size={17} /></a> : null}
         </div>
       </div>
       <div className="project-visual" aria-hidden="true">

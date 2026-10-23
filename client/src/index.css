@@ -130,6 +130,7 @@ h1, h2, h3, .brand-name { font-family: 'Space Grotesk', sans-serif; }
 .detail-heading-grid h1 { margin: 0; font-size: clamp(55px, 7vw, 98px); line-height: .92; letter-spacing: -.085em; font-weight: 600; }
 .detail-heading-grid h1 span { font-size: .3em; line-height: 1.2; letter-spacing: .04em; text-transform: uppercase; }
 .detail-heading-aside { max-width: 350px; padding-bottom: 7px; }
+.detail-links { display: flex; flex-wrap: wrap; gap: 18px; }
 .detail-heading-aside p { margin-bottom: 28px; color: var(--muted); font-size: 14px; line-height: 1.75; }
 .detail-gallery-section { position: relative; z-index: 1; }
 .detail-gallery { display: flex; flex-direction: column; gap: 14px; }

@@ -18,7 +18,7 @@ export default function Projects() {
       </section>
       <section className="projects-list-section section-pad section-dark">
         <div className="container">
-          <div className="project-list-header"><span>{copy.repositories}</span><span><GitBranch size={14} /> {copy.openSource}</span></div>
+          <div className="project-list-header"><span>{String(projects.length).padStart(2, '0')} {copy.repositories}</span><span><GitBranch size={14} /> {copy.openSource}</span></div>
           <div className="project-grid projects-page-grid">{projects.map((project, index) => <ProjectCard key={project.id} project={project} index={index} />)}</div>
           <Reveal><div className="architecture-strip"><Terminal size={20} /><div><strong>{copy.architecture}</strong><span>{copy.architectureText}</span></div><a href={personal.github} target="_blank" rel="noreferrer" aria-label="Open GitHub"><ArrowUpRight size={18} /></a></div></Reveal>
         </div>

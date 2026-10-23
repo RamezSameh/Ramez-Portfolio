@@ -30,7 +30,7 @@ export default function ProjectDetail() {
           <Link className="back-link" to="/projects"><ArrowLeft size={15} /> {copy.back}</Link>
           <div className="detail-heading-grid">
             <Reveal><p className="eyebrow"><span className="eyebrow-line" />{project.number} / {projectEyebrow}</p><h1>{projectName}<br /><span>{project.tags.join(' · ')}</span></h1></Reveal>
-            <Reveal delay={0.08} className="detail-heading-aside"><p>{projectLongDescription}</p><a className="text-link" href={project.github} target="_blank" rel="noreferrer">{copy.open} <ArrowUpRight size={16} /></a></Reveal>
+            <Reveal delay={0.08} className="detail-heading-aside"><p>{projectLongDescription}</p><div className="detail-links"><a className="text-link" href={project.github} target="_blank" rel="noreferrer">{copy.open} <ArrowUpRight size={16} /></a>{project.demo ? <a className="text-link" href={project.demo} target="_blank" rel="noreferrer">{copy.liveDemo} <ArrowUpRight size={16} /></a> : null}</div></Reveal>
           </div>
         </div>
       </section>

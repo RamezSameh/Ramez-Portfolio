@@ -15,7 +15,7 @@ The portfolio presents selected projects, technical skills, development principl
 - Responsive design for desktop, tablet, and mobile
 - English and Arabic language support with RTL layout
 - Dark editorial-inspired developer portfolio design
-- Project showcase with project detail pages and image galleries
+- Project showcase with project detail pages, image galleries, and live demo links where available
 - Skills page with categorized technical capabilities
 - Contact page using a mailto workflow
 - Downloadable CV link
@@ -31,17 +31,29 @@ An end-to-end student housing platform with JWT authentication, SignalR real-tim
 
 **Technologies:** ASP.NET Core 8, SQL Server, SignalR, JWT, Repository Pattern
 
-### ECommerce.API
+### ECommerce Project
 
-An architecture-first e-commerce API with a clear separation between Core, Application, and Infrastructure layers.
+A full-stack e-commerce platform: an Angular 19 storefront on a Clean Architecture API, with Stripe and cash-on-delivery checkout, coupons, and an admin dashboard.
 
-**Technologies:** ASP.NET Core, Entity Framework Core, Clean Architecture, AutoMapper
+**Technologies:** ASP.NET Core 8, Angular 19, Clean Architecture, EF Core, Stripe
 
 ### Bookify
 
 A booking management system with Docker-ready setup and a structured N-Tier service architecture.
 
 **Technologies:** ASP.NET MVC, Docker, Repository Pattern, Unit of Work
+
+### Inventory Management System
+
+A full-stack inventory platform with multi-warehouse stock tracking, dual-entry transfers, JWT refresh-token auth, and 38 automated tests.
+
+**Technologies:** ASP.NET Core 8, Angular 18, MediatR / CQRS, EF Core, xUnit
+
+### ATS CV Builder
+
+A privacy-first, zero-backend CV builder that runs entirely in the browser — live preview, ATS compatibility score, PDF import, and AI-powered refinement with Gemini or OpenAI. [Live demo](https://ramezsameh.github.io/ATS-CV-Builder/)
+
+**Technologies:** JavaScript, HTML / CSS, Gemini AI, pdf.js, GitHub Pages
 
 ## Tech Stack
 
