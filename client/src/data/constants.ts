@@ -175,7 +175,6 @@ export const skills = [
   { name: 'React / TypeScript', detail: 'Interfaces & product flows', level: 86, category: 'Frontend', icon: 'atom' },
   { name: 'Angular', detail: 'Component-based development', level: 75, category: 'Frontend', icon: 'atom' },
   { name: 'SQL Server / EF Core', detail: 'Data modeling & persistence', level: 88, category: 'Data', icon: 'database' },
-  { name: 'Entity Framework Core', detail: 'Data access & ORM', level: 88, category: 'Data', icon: 'database' },
   { name: 'Docker', detail: 'Portable environments', level: 78, category: 'DevOps', icon: 'container' },
   { name: 'Clean Architecture', detail: 'System design & organization', level: 85, category: 'Delivery', icon: 'braces' },
   { name: 'SignalR / JWT', detail: 'Real-time & security', level: 84, category: 'Platform', icon: 'radio' },
