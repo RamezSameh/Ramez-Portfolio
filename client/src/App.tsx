@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import Experience from './pages/Experience';
 import Skills from './pages/Skills';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:projectId" element={<ProjectDetail />} />
+          <Route path="/experience" element={<Experience />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />

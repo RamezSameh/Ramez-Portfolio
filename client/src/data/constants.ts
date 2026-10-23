@@ -18,8 +18,55 @@ export const personal = {
 export const navLinks = [
   { label: 'Home', to: '/' },
   { label: 'Projects', to: '/projects' },
+  { label: 'Experience', to: '/experience' },
   { label: 'Skills', to: '/skills' },
   { label: 'Contact', to: '/contact' },
+];
+
+export const experience = [
+  {
+    period: 'Jan 2026 — Present', periodAr: 'يناير 2026 — الآن',
+    role: 'IT Help Desk Specialist', roleAr: 'أخصائي دعم فني (IT Help Desk)',
+    org: 'Dice Group — Salam City, Cairo', orgAr: 'مجموعة دايس — مدينة السلام، القاهرة',
+    description: 'Supporting internal users and workplace systems — troubleshooting hardware, software and network issues and keeping daily IT operations running.',
+    descriptionAr: 'دعم المستخدمين وأنظمة العمل الداخلية — حل مشكلات الأجهزة والبرامج والشبكات والحفاظ على سير العمل اليومي.',
+    tags: ['IT Support', 'Troubleshooting', 'Systems'],
+  },
+  {
+    period: 'Jun 2025 — Jan 2026', periodAr: 'يونيو 2025 — يناير 2026',
+    role: 'Full Stack .NET Developer Intern', roleAr: 'متدرب مطور Full Stack .NET',
+    org: 'Digital Egypt Pioneers Initiative (DEPI)', orgAr: 'مبادرة رواد مصر الرقمية (DEPI)',
+    description: 'Built full-stack web applications with ASP.NET Core, Angular and SQL Server — APIs, data access with EF Core, and complete product flows from database to interface.',
+    descriptionAr: 'بناء تطبيقات ويب متكاملة باستخدام ASP.NET Core وAngular وSQL Server — واجهات برمجية، ووصول للبيانات عبر EF Core، ومسارات منتج كاملة من قاعدة البيانات إلى الواجهة.',
+    tags: ['ASP.NET Core', 'Angular', 'EF Core'],
+  },
+  {
+    period: 'Apr 2023 — Apr 2025', periodAr: 'أبريل 2023 — أبريل 2025',
+    role: 'Electronic Warfare Officer', roleAr: 'ضابط حرب إلكترونية',
+    org: 'Egyptian Armed Forces', orgAr: 'القوات المسلحة المصرية',
+    description: 'Served as an Electronic Warfare Officer — disciplined operations, teamwork under pressure, and responsibility for critical systems.',
+    descriptionAr: 'خدمت كضابط حرب إلكترونية — عمليات منضبطة، وعمل جماعي تحت الضغط، ومسؤولية عن أنظمة حساسة.',
+    tags: ['Operations', 'Leadership'],
+  },
+];
+
+export const education = [
+  {
+    period: '2018 — 2022', periodAr: '2018 — 2022',
+    role: 'B.Sc. in Computers and Information — Information Systems', roleAr: 'بكالوريوس حاسبات ومعلومات — نظم معلومات',
+    org: 'Minia University, Faculty of Computers and Information', orgAr: 'جامعة المنيا، كلية الحاسبات والمعلومات',
+    description: 'Degree in computers and information, with a focus on information systems.',
+    descriptionAr: 'درجة جامعية في الحاسبات والمعلومات، بتخصص نظم معلومات.',
+    tags: [],
+  },
+  {
+    period: 'Aug — Sep 2021', periodAr: 'أغسطس — سبتمبر 2021',
+    role: 'Cyber Security Trainee', roleAr: 'متدرب أمن سيبراني',
+    org: 'Information Technology Institute (ITI)', orgAr: 'معهد تكنولوجيا المعلومات (ITI)',
+    description: 'Foundational cyber security training.',
+    descriptionAr: 'تدريب أساسي في الأمن السيبراني.',
+    tags: [],
+  },
 ];
 
 export const projects = [

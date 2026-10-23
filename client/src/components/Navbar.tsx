@@ -7,7 +7,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const { t, toggleLanguage, isArabic } = useLanguage();
-  const labels = [t.nav.home, t.nav.projects, t.nav.skills, t.nav.contact];
+  const labels = [t.nav.home, t.nav.projects, t.nav.experience, t.nav.skills, t.nav.contact];
 
   return (
     <header className="site-header">
@@ -62,5 +62,5 @@ export function Navbar() {
 }
 
 function indexOfNav(to: string) {
-  return ['/', '/projects', '/skills', '/contact'].indexOf(to);
+  return ['/', '/projects', '/experience', '/skills', '/contact'].indexOf(to);
 }
